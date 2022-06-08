@@ -1,0 +1,319 @@
+@media all and (max-width: 1400px){
+    
+}
+
+@media all and (max-width: 1200px){
+    .banner_content { 
+        padding: 130px 0 150px;
+    }
+    .banner_section { 
+        height: 70vh;
+    }
+    /* newsletter css */
+    .newsletter { 
+        padding: 50px 80px;
+    }
+}
+@media all and (max-width: 992px){
+    /* header start */
+    .main_header .main_menu ul li a { 
+        padding: 8px 0; 
+    }
+    /* header end */
+
+ 
+
+    /* banner css */
+    .banner_content .banner_title { 
+        font-size: 50px; 
+    }
+    .banner_content {
+        padding: 70px 0;
+    }
+    .banner_content .banner_text { 
+        width: 80%; 
+    }
+     
+
+    /* title shape css start*/
+    .section_title .title_text .prev_shape { 
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        width: 160px;
+    }
+    .section_title .title_text .next_shape { 
+        position: absolute;
+        top: 45%;
+        right: 0%;
+        width: 160px;
+    }
+    /* title shape css end*/
+
+    /* father profile start */
+    
+    .profile .father_profile .profile_image {
+        position: relative;
+        padding: 0px 0px 80px;
+    }
+    
+    .profile .father_profile .profile_image::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 730px 0 0 670px;
+        border-color: transparent transparent transparent #007bff;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .profile .father_profile::after {
+        border-width: 0;
+    }
+    .profile .father_profile .profile_image {
+        text-align: center;
+    }
+    /* father profile end */
+
+    
+}
+
+
+
+
+
+@media all and (max-width: 767px){
+    .main_header .main_menu{
+        text-align: center;
+    }
+    .main_header .main_menu ul li > ul { 
+        left: 50%;
+        transform: translateX(-20%);
+    }
+
+    /* banner css start */
+    .banner_content .banner_btn { 
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .banner_content .banner_btn .all_btn { 
+        margin: 15px 0 0;
+    }
+    .banner_content .banner_title { 
+        line-height: 57px; 
+    }
+    .banner_content .banner_title {
+        font-size: 37px;
+    } 
+    /* banner css end */ 
+
+    /* newsletter css start */
+    .newsletter {
+        text-align: center;
+        padding: 0px 0px 50px;
+
+    }
+    .newsletter .news_title { 
+        font-size: 25px; 
+    }
+    /* newsletter css start */
+
+    /* login register css start */
+    .login_registration {
+        padding: 50px 0;
+    }
+    .login_registration .image_area { 
+        display: none;
+    }
+    .login_registration .input_area .input_header {
+        margin: 0px 0px 30px;
+        text-align: center;
+    }
+    /* login register css end */
+
+    /* father registration start */
+    .profile .father_profile .profile_image::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 660px 0 0 525px;
+        border-color: transparent transparent transparent #007bff;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .profile .father_profile .profile_info .other_info .info_type .first {
+        width: 28%;
+    }
+    .profile .father_profile .profile_info .other_info .info_type .second {
+        width: 72%;
+    }
+    /* father registration end */
+
+    /* price start */
+    .price {
+        padding: 60px 0;
+    }
+    /* price end */
+    /* profile start */
+    .tutor_profile .action_btn { 
+        justify-content: center; 
+    }
+    .tutor_profile .profile_description .description_content .content_item {
+        display: flex;
+        margin-top: 10px;
+        justify-content: center !important;
+    }
+    .tutor_profile .profile_padding { 
+        text-align: center;
+    }
+    .tutor_profile .profile_image { 
+        margin: auto;
+    }
+    /* profile end */
+
+
+    /* footer css start */
+    .footer .footer_top {
+        padding: 40px 0;
+        text-align: center;
+    }
+    .footer .footer_top .footer_intro .social_links ul { 
+        justify-content: center;
+    }
+    /* footer css end */
+    
+}
+
+
+
+
+
+@media all and (max-width: 576px){
+    /* banner css */
+    .banner_content .banner_title { 
+        line-height: 50px; 
+    }
+    /* pagination start */
+    .job_board nav ul li a .next,
+    .job_board nav ul li a .prev{
+        display: none;
+    }
+    /* pagination end */
+    /* father profile start */
+    .profile .father_profile .profile_image img {
+        width: 80%;
+        margin-right: 0px;
+    }
+    .profile .father_profile .ps-5 {
+        padding-left: 10px !important;
+    }
+    .profile .father_profile .profile_info .other_info .info_type .first .info_name { 
+        font-size: 18px; 
+    }
+    .profile .father_profile .profile_info .other_info .info_type .second .info_value { 
+        font-size: 16px; 
+    }
+    /* father profile end */
+
+    /* profile start */
+    .tutor_profile .action_btn { 
+        padding: 12px 0px; 
+    }
+    .tutor_profile .action_btn .talk_btn {  
+        padding: 6px 4px;  
+        font-size: 14px;   
+        margin: 0px 0px; 
+    }
+    .tutor_profile .starting_from .starting_text { 
+        font-size: 16px; 
+    }
+   
+    /* profile end */
+     
+}
+@media all and (max-width: 530px){
+    /* banner css */
+    .banner_content .banner_readMore { 
+        width: 160px;
+        height: 50px; 
+    }
+    .section_title .title_text .prev_shape { 
+        display: none;
+    }
+    .section_title .title_text .next_shape { 
+        display: none;
+    }
+    .tuition {
+        padding: 51px 0;
+    }
+    /* father profile start */
+    .profile .father_profile .profile_image::after { 
+        border-width: 550px 0 0 400px; 
+    }
+    .profile .father_profile {
+        padding: 100px 0; 
+    }
+    /* father profile end */
+}
+@media all and (max-width: 500px){
+    /* pirce start */
+   .price .section_title .subtitle { 
+	    font-size: 16px; 
+    }
+   .price .section_title .title {  
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .price .price_table .single_table .plan_price { 
+        font-size: 30px;
+        line-height: 50px; 
+        margin-bottom: 10px;
+    }
+    .price .price_table .single_table .plan_name { 
+        font-size: 21px;
+        line-height: 30px; 
+    }
+   /* pirce end */
+}
+
+@media all and (max-width: 450px){
+   /* father profile start */
+   .profile .father_profile .profile_image::after { 
+	border-width: 400px 0 0 300px; 
+    }
+    .profile .father_profile {
+        padding: 50px 0; 
+    }
+   /* father profile end */
+   /* tution history start */
+   .active_tution_area .active_tution_item .item_body .tution_item {
+	margin: 20px 0px;
+    }
+   /* tution history end */
+   
+}
+@media all and (max-width: 400px){
+    /* banner css */
+    .banner_content {
+        padding: 70px 0;
+    }
+    /* newsletter css start */
+    .newsletter .newsletter_form form .news_btn { 
+        padding: 12px 8px; 
+    }
+    /* newsletter css end */
+
+    /* price start */
+    .price {
+        padding: 30px 0;
+    }
+    /* price end */
+
+    
+}
