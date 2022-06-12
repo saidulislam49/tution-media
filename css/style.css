@@ -1464,8 +1464,7 @@ a{
 	border-radius: 14px 14px 0 0; 
 	max-height: 300px;
 	min-height: 300px;
-	overflow: hidden;
-    padding-top: 20px;
+	overflow: hidden; 
 }
 .tutors_section .all_tutors .single_tutor .tutor_profile_image img{ 
     width: 100%;
