@@ -33,7 +33,9 @@
     .banner_content .banner_text { 
         width: 80%; 
     }
-     
+    .banner_section {
+        height: unset;
+    }
 
     /* title shape css start*/
     .section_title .title_text .prev_shape { 
@@ -95,12 +97,24 @@
 
     /* banner css start */
     .banner_content .banner_btn { 
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
 
     }
+    .banner_content .banner_btn { 
+        margin-top: 20px;
+    }
     .banner_content .banner_btn .all_btn { 
-        margin: 15px 0 0;
+        margin: 15px 7.5px 0;
+    }
+    .banner_content .banner_btn .all_btn { 
+        font-size: 14px;   
+        width: 150px;
+        line-height: 20px;
+        border-radius: 10px;
+        padding: 14px 0; 
+        display: flex; 
+        margin: 15px 7.5px 0; 
     }
     .banner_content .banner_title { 
         line-height: 57px; 
@@ -110,6 +124,14 @@
     } 
     /* banner css end */ 
 
+    /* tution start */
+    .tuition {
+        padding: 70px 0;
+    }
+    .tuition .section_title h2 { 
+        font-size: 30px;  
+    }
+    /* tution end */
     /* newsletter css start */
     .newsletter {
         text-align: center;
@@ -195,10 +217,11 @@
 
 
 @media all and (max-width: 576px){
-    /* banner css */
+    /* banner css start*/
     .banner_content .banner_title { 
         line-height: 50px; 
     }
+    /* banner css end */
     /* pagination start */
     .job_board nav ul li a .next,
     .job_board nav ul li a .prev{
@@ -250,7 +273,7 @@
         display: none;
     }
     .tuition {
-        padding: 51px 0;
+        padding: 25px 0;
     }
     /* father profile start */
     .profile .father_profile .profile_image::after { 
@@ -262,6 +285,73 @@
     /* father profile end */
 }
 @media all and (max-width: 500px){
+    /* banner css start */
+    .banner_content {
+        padding: 45px 0;
+    }
+    .banner_content .banner_title {
+        line-height: 33px;
+        font-size: 22px;
+    }
+    .banner_content .banner_text { 
+        font-size: 14px; 
+        line-height: 20.6px; 
+    }
+    .banner_content .banner_btn .all_btn {
+        font-size: 13px;
+        width: 139px;
+        line-height: 18px;  
+        margin: 13px 4.5px 0;
+    }
+    /* banner css end */
+
+    /* tuition start */
+    .tuition .tuition_news {
+        margin-top: 15px;
+    }
+    .tuition .section_title h2 {
+        font-size: 22px;
+    }
+    /* tuition end */
+
+    /* post card start */
+    .post_card .post_card_header .class_title h4 { 
+        font-size: 14px; 
+        line-height: 20px;
+    }
+    .post_card .post_card_header .job_id span { 
+        font-size: 14px; 
+        line-height: 20px;
+    }
+    .post_card .post_meta .location i {
+        font-size: 15px;
+        margin-right: 7px;
+    }
+    .post_card .post_meta .location span {
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    .post_card .post_meta .date span { 
+        font-size: 13px; 
+    }
+    .post_card .post_card_content .content_item .item_data { 
+        font-size: 13px; 
+        line-height: 20px; 
+    }
+    .post_card .post_card_content .content_item .icon i {
+        width: 35px;
+        height: 35px; 
+        font-size: 15px; 
+    }
+    .post_card .button .view_btn { 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px; 
+        padding: 10px 16px;
+        border-radius: 22px; 
+    }
+    /* post card end */
+
     /* pirce start */
    .price .section_title .subtitle { 
 	    font-size: 16px; 
@@ -299,10 +389,7 @@
    
 }
 @media all and (max-width: 400px){
-    /* banner css */
-    .banner_content {
-        padding: 70px 0;
-    }
+    /* banner css */ 
     /* newsletter css start */
     .newsletter .newsletter_form form .news_btn { 
         padding: 12px 8px; 

@@ -148,7 +148,7 @@ a{
 	box-shadow: unset;
 }
 .main_header{
-    padding: 25px 0;
+    padding: 15px 0;
     transition: all 1s;
     z-index: 9999;
     background-color: #ffffff; 
@@ -234,10 +234,16 @@ a{
     text-decoration: none;
     text-transform: capitalize;
     background:  #0975F9;
+    border: 1.5px solid transparent;
     padding: 16px 45px;
     display: inline-block;
     border-radius: 30px;
-
+    transition: all .2s ease-in-out;
+}
+.main_header .apply .apply_btn:hover{
+    background: transparent;
+    border: 1.5px solid #0975F9;
+    color: #0B1033;
 }
 .main_header .account a{
     width: 40px;
@@ -361,7 +367,7 @@ a{
 .tuition{
     padding: 100px 0;
 }
-.tuition .section_title{
+.tuition .section_title h2{
     text-align: center;
     font-family: 'SamsungSharpSans';
     font-size: 36px;
@@ -380,6 +386,11 @@ a{
     box-shadow: 0px 7px 90px rgba(132, 140, 207, 0.12); 
     position: relative;
     margin-bottom: 35px;
+    transition: all .3s;
+}
+.post_card:hover {
+	box-shadow: 0 5px 5px 2px rgba(132, 140, 207, 0.12);
+	transform: translateY(-5px);
 }
 .post_card .post_card_header {
 	display: flex;
@@ -393,7 +404,7 @@ a{
 }
 .post_card .post_card_header .job_id span{
     font-family: 'Outfit', sans-serif;
-    font-family: 16px;
+    font-size: 16px;
     font-weight: 500;
     color: #0975F9;
     line-height: 26px;
@@ -451,6 +462,11 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    transition: all .3s ease-in-out;
+}
+.post_card .post_card_content .content_item .icon i:hover { 
+	background: #0975F9; 
+	color: #E6F1FE; 
 }
 .post_card .post_card_content .content_item .item_data{
     font-family: 'Outfit', sans-serif;
@@ -480,7 +496,13 @@ a{
     display: inline-block;
     padding: 10px 26px;
     border-radius: 22px;
-   
+   border: 1.5px solid transparent;
+   transition: all .2s ease-in-out;
+}
+.post_card .button .view_btn:hover {
+    background: #ffffff;
+    border: 1.5px solid #0975F9;
+    color: #0B1033;
 }
 /* Tuition section end*/
 
@@ -536,6 +558,11 @@ a{
     top: 50%;
     right: 1%;
     transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+}
+.newsletter .newsletter_form form .news_btn:hover { 
+    color: #000000; 
+    background: #dfeeff;   
 }
 .newsletter{}
 .newsletter{}
@@ -617,6 +644,11 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease-in-out;
+}
+.footer .footer_top .footer_intro .social_links ul li.facebook a:hover{
+    background: #015BFA;
+    color: #ffffff;
 }
 .footer .footer_top .footer_intro .social_links ul li.instagram a{ 
     color: #FF006B;
@@ -628,7 +660,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease-in-out;
 }
+.footer .footer_top .footer_intro .social_links ul li.instagram a:hover{
+    background: #FF006B;
+    color: #ffffff;
+} 
 .footer .footer_top .footer_intro .social_links ul li.twitter a{ 
     color: #55ACEE;
     border: 1px solid#55ACEE;
@@ -639,6 +676,11 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease-in-out;
+}
+.footer .footer_top .footer_intro .social_links ul li.twitter a:hover{
+    background: #55ACEE;
+    color: #ffffff;
 }
 /* important links */
 .footer .footer_top .important_links{ 
@@ -663,6 +705,10 @@ a{
     font-family: 'Outfit', sans-serif;
     line-height: 28px;
     text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.footer .footer_top .important_links ul li a:hover{
+    color:#0B1033;     
 }
 
 /* categories */
@@ -688,6 +734,10 @@ a{
     font-family: 'Outfit', sans-serif;
     line-height: 28px;
     text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.footer .footer_top .pages ul li a:hover{
+    color: #0B1033; 
 }
 /* contact */
 .footer .footer_top .contact_us{
@@ -708,6 +758,10 @@ a{
     line-height: 28px;
     text-decoration: none;
     display: block;
+    transition: all .2s ease-in-out;
+}
+.footer .footer_top .contact_us .contact_item a:hover{
+    color: #0B1033; 
 }
 
 .copyright_area{
@@ -821,21 +875,32 @@ a{
     font-weight: 400;
     margin: 0px 0px 30px;
 }
+.login_registration .input_area form input:focus{
+    background: #ffffff;
+}
 .login_registration .input_area form input:focus,
 .login_registration .input_area form button:focus{
     box-shadow: unset;
+
 }
 .login_registration .input_area form button.submit{
     width: 100%;
     padding: 20px;
     border-radius: 12px;
     background: #0975F9;
+    border: 2px solid transparent;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     line-height: 23px;
     font-weight: 500;
     color: #ffffff;
     margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+}
+.login_registration .input_area form button.submit:hover{
+    background: #f8f8f8;
+    border: 2px solid #0975F9;
+    color: #344767;
 }
 .login_registration .input_area form button.sign_with_google{
     width: 100%;
@@ -1387,7 +1452,13 @@ a{
 .tutors_section .all_tutors .single_tutor{
     text-align: center;
     margin-bottom: 25px;
+    transition: all .3s ease-in-out;
 }
+.tutors_section .all_tutors .single_tutor:hover{ 
+	box-shadow: 0 5px 5px -2px rgba(0,0,0,.3);
+	transform: translateY(-5px);
+    border-radius: 14px;
+} 
 .tutors_section .all_tutors .single_tutor .tutor_profile_image {
 	background: #E6F1FE;
 	border-radius: 14px 14px 0 0; 
@@ -1428,10 +1499,16 @@ a{
     color: #ffffff; 
     text-decoration: none;
     background: #0975F9;
+    border: 1.5px solid transparent;
     padding: 6px 40px;
     display: inline-block;
     border-radius: 17.5px;
     margin-bottom: 20px;
-
+    transition: all .2s ease-in-out;
+}
+.tutors_section .all_tutors .single_tutor .tutor_description .view_details:hover{
+    background: transparent;
+    border: 1.5px solid #0975F9;
+    color: #0B1033;
 }
 /* all tutor end */
